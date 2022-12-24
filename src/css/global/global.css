@@ -1,0 +1,48 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap');
+
+
+:root{
+    --Dark-Blue: #2b3945; 
+    --Very-Dark-Blue: #202c37;
+    --Very-Dark-Blue: #111517;
+    --Dark-Gray: #858585;
+    --Very-Light-Gray: #fafafa;
+    --White:#ffffff;
+    --font-main: 'Nunito Sans', sans-serif;
+}
+
+@media (max-width:768px) {
+    .box_main .search_container .form{
+        padding: 12% 5% 1% 5%;
+    }
+}
+
+@media (max-width:425px) {
+    .box_main .search_container .form{
+        padding: 24% 5% 1% 5%;
+    }
+}
+
+/* @media (max-width:375px) {
+    .container_flags{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+        grid-gap: 5rem;
+        margin: 3.5rem 0;
+
+    }
+} */
+
+@media (max-width:320px) {
+    .box_main .search_container .form{
+        padding: 45% 5% 1% 5%;
+    }
+}
+
+/* - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%) */

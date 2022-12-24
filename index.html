@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links css -->
+
+    <link rel="stylesheet" href="./src/css/global/global.css">
+    <link rel="stylesheet" href="./src/css/reset/reset.css">
+    <link rel="stylesheet" href="./src/css/maincss/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2 class="title_world">Where in the World?</h2>
+
+        <span class="mode-alan">
+            <i class="fa-solid fa-moon"></i>
+            light mode
+        </span>
+    </header>
+
+    <main class="box_main">
+        <section class="search_container">
+            <form class="form">
+                <div class="search_pesquisa">
+                    <i class="fa fa-magnifying-glass"></i>
+                    <div class="input_box">
+                        <input type="text" name="name_flag" id="flag" placeholder="Search for a country">
+                    </div>
+                </div>
+                
+                <div class="select_filter">
+                    <select name="names_continentes" id="names_continentes" >
+                        <option value="" hidden disabled selected>Filter by Region</option>
+                        <option value="Africa">Africa</option>
+                        <option value="America">America</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+
+        <section class="container_flags">
+            
+
+            
+        </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

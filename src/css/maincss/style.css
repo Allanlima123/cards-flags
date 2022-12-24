@@ -1,0 +1,142 @@
+.cabecalho{
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--White);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.cabecalho .title_world{
+    font-family: var(--font-main);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.cabecalho .mode-alan,
+.cabecalho .mode-alan i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cabecalho .mode-alan i{
+    padding-right: .5rem;
+}
+
+.search_container,
+.search_container .form{
+    padding: 4% 3.8% 1% 3.8%;
+}
+
+.search_container .form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_container .form .search_pesquisa{
+    min-width: 35%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    background: var(--White);
+    border-radius: 1rem;
+    padding: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.search_container .form .search_pesquisa .fa-magnifying-glass{
+    width: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    color: var(--Dark-Gray);
+}
+
+.search_container .form .search_pesquisa .input_box,
+.search_container .form .search_pesquisa .input_box input{
+    width: 100%;
+    height: 100%;
+}
+
+.search_container .form .search_pesquisa .input_box input{
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+.search_container .form .search_pesquisa .input_box input::placeholder{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--Dark-Gray);
+}
+
+.search_container .form .select_filter{
+    min-width: 16.5%;
+    height: 6rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.search_container .form .select_filter #names_continentes{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    padding: 1rem 5%;
+}
+
+.search_container .form .select_filter #names_continentes:first-child{
+    font-size: 1.5rem;
+    color: var(--Dark-Gray);
+}
+
+.container_flags{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(23.5rem,1fr));
+    grid-gap: 5rem;
+    margin: 3.5rem 0;
+    padding: 0 10rem;
+}
+
+.container_flags .card_flag{
+    height: 32rem;
+    border-radius: .5rem;
+    background-color: var(--White);
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.container_flags .card_flag .img_flag{
+    width: 100%;
+    height: 14.5rem;
+}
+
+.container_flags .card_flag .img_flag img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container_flags .card_flag .description_flag{
+    margin: 2.8rem;
+}
+
+.container_flags .card_flag .description_flag .name_flag{
+    font-size: 1.9rem;
+    margin-bottom: .8rem;
+    color: var(--Very-Dark-Blue);
+    font-family: var(--font-main);
+}
+
+.container_flags .card_flag .description_flag .about_flag li{
+    font-family: var(--font-main);
+    color: var(--Dark-Gray);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.container_flags .card_flag .description_flag .about_flag li strong{
+    color: var(--Very-Dark-Blue);
+}
