@@ -20,23 +20,28 @@
 
 @media (max-width:425px) {
     .box_main .search_container .form{
-        padding: 24% 5% 1% 5%;
+        padding: 24% 5% 1% 2.7%;
+    }
+
+    .search_container .form .search_pesquisa{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .search_container .form .select_filter{
+        width: 60%;
     }
 }
 
-/* @media (max-width:375px) {
-    .container_flags{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
-        grid-gap: 5rem;
-        margin: 3.5rem 0;
-
+@media (max-width:375px) {
+    .box_main .search_container .form{
+        padding: 35% 0 0 0;
     }
-} */
+}
 
 @media (max-width:320px) {
     .box_main .search_container .form{
-        padding: 45% 5% 1% 5%;
+        padding: 40% 5% 1% 2.7%;
     }
 }
 
