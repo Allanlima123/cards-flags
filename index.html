@@ -29,13 +29,14 @@
                 <div class="search_pesquisa">
                     <i class="fa fa-magnifying-glass"></i>
                     <div class="input_box">
-                        <input type="text" name="name_flag" id="flag" placeholder="Search for a country">
+                        <input type="text" name="name_flag" id="name_flag" placeholder="Search for a country">
                     </div>
                 </div>
                 
                 <div class="select_filter">
-                    <select name="names_continentes" id="names_continentes" >
+                    <select name="names_continentes" id="names_continentes">
                         <option value="" hidden disabled selected>Filter by Region</option>
+                        <option value="all">All</option>
                         <option value="Africa">Africa</option>
                         <option value="America">America</option>
                         <option value="Asia">Asia</option>
@@ -46,11 +47,7 @@
             </form>
         </section>
 
-        <section class="container_flags">
-            
-
-            
-        </section>
+        <section class="container_flags"></section>
     </main>
 
     <script src="./src/js/index.js"></script>

@@ -101,6 +101,7 @@
 }
 
 .container_flags .card_flag{
+    border: 5px solid rgba(0,0,0,.2);
     height: 32rem;
     border-radius: .5rem;
     background-color: var(--White);
