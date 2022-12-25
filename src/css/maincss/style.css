@@ -28,7 +28,7 @@
 
 .search_container,
 .search_container .form{
-    padding: 4% 3.8% 1% 3.8%;
+    padding: 4% 3.8% 1% 2.7%;
 }
 
 .search_container .form{
@@ -93,20 +93,25 @@
 }
 
 .container_flags{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(23.5rem,1fr));
-    grid-gap: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 3.5rem 0;
-    padding: 0 10rem;
 }
 
 .container_flags .card_flag{
+    margin: 3rem 3.5rem;
+    display: flex;
+    flex-direction: column;
     border: 5px solid rgba(0,0,0,.2);
+    width: 25rem;
     height: 32rem;
     border-radius: .5rem;
     background-color: var(--White);
     overflow: hidden;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    cursor: pointer;
 }
 
 .container_flags .card_flag .img_flag{
