@@ -105,7 +105,6 @@
     margin: 3rem 3.5rem;
     display: flex;
     flex-direction: column;
-    border: 5px solid rgba(0,0,0,.2);
     width: 25rem;
     height: 32rem;
     border-radius: .5rem;
@@ -146,4 +145,17 @@
 
 .container_flags .card_flag .description_flag .about_flag li strong{
     color: var(--Very-Dark-Blue);
+    font-weight: 400;
+}
+
+.container_flags .card_flag .description_flag .about_flag li strong.active,
+.container_flags .card_flag .description_flag .name_flag.active,
+.cabecalho.active{
+    color: var(--White);
+}
+
+.cabecalho.active,
+.box_main.active,
+.container_flags .card_flag.active{
+    background: var(--Dark-Blue);
 }

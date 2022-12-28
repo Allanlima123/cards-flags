@@ -1,6 +1,7 @@
 import { criateCardFlag } from "../js/card/card.js";
 import { changeMode } from "../js/mode-dark-clear/mode-dark-clear.js"
-    //mode-dark-clear/mode-dark-clear.js;
+
+import { modeBarkAndClear } from "../js/mode-dark-clear/mode-dark-clear.js";
 
 const urlFlags = all => `https://restcountries.com/v3.1/${all}`;
 const urlRegion = region => `https://restcountries.com/v3.1/region/${region}`;
@@ -8,7 +9,7 @@ const urlRegion = region => `https://restcountries.com/v3.1/region/${region}`;
 const containerFlags = document.querySelector(".container_flags");
 const namesContinentes = document.querySelector("#names_continentes");
 const nameFlag = document.querySelector("#name_flag");
-const modeBarkAndClear = document.querySelector(".mode-bark-and-clear");
+
 
 const all = "all";
 
