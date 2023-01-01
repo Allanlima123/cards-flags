@@ -1,4 +1,4 @@
-const criateCardFlag = (dateCards) =>{
+const criateCardFlag = dateCards =>{
     let createFlags = dateCards.map(flag =>{
         const { name, population, region, flags, capital } = flag;
 
@@ -12,13 +12,16 @@ const criateCardFlag = (dateCards) =>{
                 <h3 class="name_flag">${name.common}</h3>
                 <ul class="about_flag">
                     <li>
-                        <strong class="populatin">Population:</strong> ${Number.parseFloat(population).toLocaleString()}
+                        <strong>Population:</strong>
+                        <span class="populatin">${Number.parseFloat(population).toLocaleString()}</span>
                     </li>
                     <li>
-                        <strong class="region">Region:</strong> ${region}
+                        <strong>Region:</strong>
+                        <span class="region">${region}</span> 
                     </li>
                     <li>
-                        <strong class="capital">Capital:</strong> ${capital}
+                        <strong>Capital:</strong>
+                        <span class="capital">${capital}</span>
                     </li>
                 </ul>
             </div>
