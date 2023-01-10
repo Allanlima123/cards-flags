@@ -1,6 +1,5 @@
 import { criateCardFlag } from "../js/card/card.js";
-import { changeMode } from "../js/mode-dark-clear/mode-dark-clear.js"
-import { modeBarkAndClear } from "../js/mode-dark-clear/mode-dark-clear.js";
+import { changeMode, modeBarkAndClear } from "../js/mode-dark-clear/mode-dark-clear.js"
 
 const urlFlags = all => `https://restcountries.com/v3.1/${all}`;
 
@@ -39,7 +38,8 @@ const filtercards = inputValue => card =>{
 }
 
 const filterByContinent = selectedValue => card =>{
-    if(selectedValue ===  "all"){
+    const allSeletedValue = selectedValue ===  "all"
+    if(allSeletedValue){
         card.style.display = 'flex';
         return
     }
